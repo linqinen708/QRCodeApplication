@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.linqinen708.zxing">
+
+    <!-- 请求访问使用照相设备 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera"/>
+    <!-- 自动聚焦权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity android:name=".activity.CaptureActivity">
+        </activity>
+    </application>
+
+</manifest>
